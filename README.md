@@ -8,7 +8,8 @@ only read、update、delete database
  ### DatabaseConnectOracle  讀寫 Oracle 資料庫 (完成)    
     需加入 Oracle.ManagedDataAccess.dll 參考
 ### DatabaseConnectPostgresql  讀寫 Postgresql 資料庫 (完成)    
-### DatabaseConnectSQLite.vb  讀寫 SQLite 資料庫 (未完成)    
+### DatabaseConnectSQLite.vb  讀寫 SQLite 資料庫 (完成)    
+    需加入 System.Data.SQLite.dll 參考
 ## 使用前需變更連線資訊
 ``` vb.net
 ex:mssql
