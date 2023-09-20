@@ -1,9 +1,9 @@
 ﻿Module Module1
 
     Sub Main()
-        Dim dbName As String = "dbname"
-        Dim SQL As String = "input sql"
-        Dim RUD As RUD_DATABASE.DatabaseConnectMSSql = New RUD_DATABASE.DatabaseConnectMSSql
+        Dim dbName As String = "mydb.db3"
+        Dim SQL As String = "SELECT * FROM BGG_PACK ORDER BY sn_ DESC LIMIT 5"
+        Dim RUD As RUD_DATABASE.DatabaseConnectSQLite = New RUD_DATABASE.DatabaseConnectSQLite
         Dim dt As DataTable = RUD.ExecuteQuery(SQL, dbName)
         Dim outputString As String = ""
         If dt.Rows.Count > 0 Then
